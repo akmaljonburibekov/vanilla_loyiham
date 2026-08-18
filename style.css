@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #FCF8FF;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  min-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #fff;
+}
+
+.header h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31.2px;
+  color: #4A00E0;
+}
+
+.header button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #4A00E0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.navbar {
+  display: flex;
+  gap: 24px;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: #4A00E0;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(250px, 1fr) minmax(618px, 3fr);
+  align-items: center;
+  gap: 48px;
+  margin-top: 48px;
+  padding-top: 48px;
+  padding-left: 48px;
+  padding-bottom: 48px;
+  background-color: #fff;
+}
+
+/* HERO IMAGE */
+.hero img {
+  border-radius: 50%;
+  padding: 0;
+}
+
+/* HERO CONTENT */
+.heroContent {
+  max-width: 618px;
+}
+
+.heroContentTitle {
+  font-weight: 700;
+  font-style: 32px;
+  line-height: 38.4px;
+  letter-spacing: -0.64px;
+  color: #1A1A27;
+  margin-bottom: 4px;
+}
+
+.heroContentSubTitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25.2px;
+  color: #4A00E0;
+  margin-bottom: 16px;
+}
+
+.heroContentText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #484456;
+  margin-bottom: 16px;
+}
+
+.heroContentButton {
+  padding: 8px 16px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  border-radius: 8px;
+  background-color: #4A00E0;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* SKILLS */
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.mySkills {
+  padding: 24px 24px 142px;
+  background-color: #fff;
+}
+
+.mySkillsLink {
+  display: flex;
+  gap: 16px;
+}
+
+.mySkills a {
+  margin-top: 16px;
+  padding: 8px 28.85px;
+  background-color: #EEECFE;
+  border: 1px solid #C9C3D9;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  color: #484456;
+  text-decoration: none;
+}
+
+.mySkillsTitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25.2px;
+  color: #1A1A27;
+}
+
+/* COUNTER */
+.counter {
+  padding: 24px 24px ;
+  background-color: #fff;
+}
+
+.counterTitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25.2px;
+  color: #1A1A27;
+}
+
+.counterWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: #EEECFE;
+}
+
+.counterResult {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38.4px;
+  letter-spacing: -0.64px;
+  color: #1A1A27;
+}
+
+.counterButtons {
+  display: flex;
+  gap: 16px;
+}
+
+.counterButtons button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #4A00E0;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 46px;
+  padding-bottom: 48px;
+  background-color: #E9E6F8;
+}
+
+.footerTitle {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  color: #1A1A27;
+  margin-bottom: 16px;
+}
+
+.footerSubTitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #484456;
+  margin-bottom: 16px;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 16px;
+}
+
+.footerLinks a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5D6478;
+}
