@@ -20,30 +20,34 @@ a {
   text-decoration: none;
 }
 
+
 .container {
-  min-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 50px;
 }
 
 /* HEADER START */
 .header {
+  background-color: #fff;
+}
+
+.headerWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 16px;
   padding-bottom: 16px;
-  background-color: #fff;
 }
 
 .header h1 a {
   font-weight: 700;
-  font-size: 24px;
+  font-size: clamp(14px, 4vw, 24px);
   line-height: 31.2px;
   color: #4A00E0;
 }
 
-.header button {
+.hireMe {
   padding: 8px 16px;
   border: none;
   border-radius: 8px;
@@ -70,18 +74,20 @@ a {
 .hamburger {
   display: none;
 }
-
 /* HEADER END */
 
 
 /* FOOTER START */
 .footer {
+  background-color: #E9E6F8;
+}
+
+.footerWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 46px;
   padding-bottom: 48px;
-  background-color: #E9E6F8;
 }
 
 .footerTitle {
@@ -113,5 +119,45 @@ a {
   line-height: 24px;
   color: #5D6478;
 }
-
 /* FOOTER END */
+
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .header {
+    position: relative;
+    padding: 20px 30px;
+  }
+
+  .navbar {
+    display: none;
+    position: absolute;
+    right: 48px;
+    top: 50px;
+    border: 1px solid #E3E0F2;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #fff;
+    max-width: 100px;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .hireMe {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    background-color: transparent;  
+  }
+
+  .footer {
+    padding: 0 20px;
+  }
+
+  .footerWrapper {
+    text-align: center;
+  }
+}
