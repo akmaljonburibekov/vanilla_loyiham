@@ -3,6 +3,8 @@
   grid-template-columns: 2fr 1fr;
   gap: 24px;
   max-width: 896px;
+  width: 100%;
+  padding: 10px 0;
   justify-self: center;
 }
 
@@ -18,7 +20,7 @@
   margin-bottom: 56px;
   text-align: center;
   font-weight: 700;
-  font-size: 26px;
+  font-size: clamp(22px, 4vw, 26px);
   line-height: 31.2px;
   letter-spacing: 0.52px;
   color: #4A00E0;
@@ -44,7 +46,7 @@
 
 .contactForm label {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 0.7px;
   color: #484456;
   margin-bottom: 4px;
@@ -99,7 +101,7 @@
   gap: 12px;
   max-width: 282px;
   width: 100%;
-  padding: 100px 25px 100px;
+  padding: 25px 25px;
   background-color: #fff;
   border-radius: 12px;
 }
@@ -135,4 +137,70 @@
   font-size: 18px;
   line-height: 28.8px;
   color: #6336FA;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+
+  .contact {
+    /* padding: 0; */
+  }
+
+  .contactInfo {
+    grid-template-columns: 1fr;
+  }
+
+  .contactFormWrapper button {
+    max-width: 370px;
+    width: 100%;
+    justify-self: center;
+  }
+
+  .contactFormWrapper {
+    padding: 28px 34px;
+    border-radius: 0%;
+  }
+
+  .contactForm {
+    width: 100%;
+  }
+
+  .contactForm button {
+    width: 100%;
+  }
+
+  .contactSocial {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    max-width: 360px;
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    position: relative;
+    border-radius: 0%;
+  }
+
+  .contactSocial h3 {
+    position: absolute;
+    top: 22px;
+    left: 132px;
+  }
+
+  .contactSocial a {
+    padding: 0;
+    margin-left: 40px;
+  }
+
+  .contactMessageText {
+    padding: 0 16px;
+  }
+
+  .contactMessage {
+    border-radius: 0%;
+  }
 }

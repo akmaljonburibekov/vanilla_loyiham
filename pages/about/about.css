@@ -289,10 +289,19 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    border-radius: 0%;
+  }
+
+  .heroAboutDescription {
+    text-align: justify;
   }
 
   .skills {
     grid-template-columns: 1fr;
+  }
+
+  .skillsLeft, .skillsRight {
+    border-radius: 0%;
   }
 
   .myHobbiesList {
@@ -304,11 +313,11 @@
     justify-content: center;
   }
 
-  .myHobbiesList li:last-child {
-    padding-right: 16px;
+  .myHobbies {
+    border-radius: 0%;
   }
 
-  .skillsRight {
-    margin-bottom: 24px;
+  .myHobbiesList li:last-child {
+    padding-right: 16px;
   }
 }

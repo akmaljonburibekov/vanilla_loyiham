@@ -158,6 +158,7 @@
     margin-top: 0;
     grid-template-columns: 1fr;
     gap: 20px;
+    border-radius: 0%;
   }
 
   .hero img {
@@ -165,7 +166,12 @@
   }
 
   .heroContent {
+    padding: 0 30px;
     text-align: center;
+  }
+
+  .heroContentButton {
+    width: 100%;
   }
 
   .skills {
@@ -175,6 +181,7 @@
 
   .mySkills {
     padding-bottom: 28px;
+    border-radius: 0%;
   }
 
   .mySkillsTitle {
@@ -185,6 +192,14 @@
   .mySkillsLink {
     display: flex;
     flex-direction: column;
+    text-align: center;
+  }
+
+  .counter {
+    border-radius: 0%;
+  }
+
+  .counterTitle {
     text-align: center;
   }
 
