@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="../../style.css">
     <title>Contact</title>
   </head>
   <body>
@@ -27,61 +28,73 @@
     <main class="container">
       <!-- CONTACT FORM -->
       <section class="contact">
-        <div class="contactForm">
-          <form action="">
-            <label for="ism">Ism</label><br /><br />
-            <input
-              type="text"
-              id="ism"
-              placeholder="Ismingizni kiriting"
-            /><br /><br />
-            <label for="email">Email</label><br /><br />
-            <input
-              type="text"
-              id="email"
-              placeholder="Email manzilingizni kiriritng"
-            /><br /><br />
-            <label for="">Xabar</label><br /><br />
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Xabaringizni yozing"
-            ></textarea
-            ><br /><br />
-            <button>Yuborish</button>
-          </form>
-        </div>
-
-        <div class="contactSocial">
-          <h3>Ijtimoiy tarmoqlar</h3>
-          <img
-            src="../../asets/images/icons/instagram.svg"
-            alt="Instagram icon"
-          />
-          <span>Instagram</span>
-          <img
-            src="../../asets/images/icons/telegram.svg"
-            alt="Telegram icon"
-          />
-          <span>Telegram</span>
-          <img src="../../asets/images/icons/youtube.svg" alt="Youtube icon" />
-          <span>Youtube</span>
-          <img
-            src="../../asets/images/icons/linkedin.svg"
-            alt="Linkedin icon"
-          />
-          <span>Linkedin</span>
+        <h1 class="contactTitle">Men bilan bog'laning</h1>
+        <div class="contactInfo">
+          <div class="contactFormWrapper">
+            <form class="contactForm" action="">
+              <label for="ism">Ism</label>
+              <input
+                type="text"
+                id="ism"
+                placeholder="Ismingizni kiriting"
+              />
+              <label for="email">Email</label>
+              <input
+                type="text"
+                id="email"
+                placeholder="Email manzilingizni kiriritng"
+              />
+              <label for="message">Xabar</label>
+              <textarea
+                name="messageArea"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Xabaringizni yozing"
+              ></textarea
+              >
+              <button>Yuborish</button>
+            </form>
+          </div>
+  
+          <!-- SOCIAL MEDIA -->
+          <div class="contactSocial">
+            <h3>Ijtimoiy tarmoqlar</h3>
+            <a href="#" class="contactSocialItem">
+              <img
+              src="../../asets/images/icons/instagram.svg"
+              alt="Instagram icon"
+              />
+              <span>Instagram</span>
+            </a>
+            <a href="#" class="contactSocialItem">
+              <img
+              src="../../asets/images/icons/telegram.svg"
+              alt="Telegram icon"
+            />
+            <span>Telegram</span>
+            </a>
+            <a href="#" class="contactSocialItem">
+              <img src="../../asets/images/icons/youtube.svg" alt="Youtube icon" />
+              <span>Youtube</span>
+            </a>
+            <a href="#" class="contactSocialItem">
+              <img
+              src="../../asets/images/icons/linkedin.svg"
+              alt="Linkedin icon"
+             />
+            <span>Linkedin</span>
+            </a>
+          </div>
         </div>
       </section>
 
       <!-- CONTACT MESSAGE -->
       <section class="contactMessage">
-        <div class="contactMessageText">
+        <p class="contactMessageText">
           Savollaringiz yoki takliflaringiz bo'lsa, men bilan bemalol
           bog'lanishingiz mumkin!
-        </div>
+        </p>
       </section>
     </main>
 
