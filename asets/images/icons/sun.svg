@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <defs>
+    <!-- Markaziy gradient -->
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF59D" />
+      <stop offset="60%" stop-color="#FFD54F" />
+      <stop offset="100%" stop-color="#FFB300" />
+    </radialGradient>
+    
+    <!-- Yumshoq porlash -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="0.6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <g filter="url(#glow)">
+    <!-- Quyosh nurlari -->
+    <g stroke="#FFC107" stroke-width="1.5" stroke-linecap="round">
+      <line x1="10" y1="1.5" x2="10" y2="3.5" />
+      <line x1="10" y1="16.5" x2="10" y2="18.5" />
+      <line x1="1.5" y1="10" x2="3.5" y2="10" />
+      <line x1="16.5" y1="10" x2="18.5" y2="10" />
+      <line x1="4" y1="4" x2="5.4" y2="5.4" />
+      <line x1="14.6" y1="14.6" x2="16" y2="16" />
+      <line x1="4" y1="16" x2="5.4" y2="14.6" />
+      <line x1="14.6" y1="5.4" x2="16" y2="4" />
+    </g>
+
+    <!-- Quyosh markazi -->
+    <circle cx="10" cy="10" r="4" fill="url(#sunGlow)" stroke="#FFA000" stroke-width="0.5" />
+  </g>
+</svg>

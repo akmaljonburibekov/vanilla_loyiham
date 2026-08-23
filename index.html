@@ -17,6 +17,7 @@
           <a href="./pages/about/about.html">Men Haqimda</a>
           <a href="./pages/contact/contact.html">Kontakt</a>
         </nav>
+        <button class="teamToggle">🌙</button>
         <button class="hamburger">
           <img src="./asets/images/icons/hamburger.svg" alt="Hamburger Icon" />
         </button>
@@ -58,11 +59,11 @@
           <h3 class="counterTitle">Mini Funksiya: Counter</h3>
           <hr />
           <div class="counterWrapper">
-            <h1 class="counterResult">12</h1>
+            <h1 class="counterResult">0</h1>
             <div class="counterButtons">
-              <button>-</button>
-              <button>Qaytarish</button>
-              <button>+</button>
+              <button class="decrease">-</button>
+              <button class="reset">Qaytarish</button>
+              <button class="increase">+</button>
             </div>
           </div>
         </div>
@@ -84,6 +85,7 @@
     </footer>
     <!-- FOOTER END -->
 
-    <script src="./script.js"></script>
+    <script src="./global.js" defer></script>
+    <script src="./script.js" defer></script>
   </body>
 </html>

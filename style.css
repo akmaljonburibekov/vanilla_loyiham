@@ -7,7 +7,7 @@
   padding-top: 48px;
   padding-left: 48px;
   padding-bottom: 48px;
-  background-color: #fff;
+  background-color: var(--white-bg-color);
   border-radius: 12px;
 }
 
@@ -27,7 +27,7 @@
   font-style: 32px;
   line-height: 38.4px;
   letter-spacing: -0.64px;
-  color: #1A1A27;
+  color: var(--title-text);
   margin-bottom: 4px;
 }
 
@@ -35,7 +35,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 25.2px;
-  color: #4A00E0;
+  color: var(--header-text);
   margin-bottom: 16px;
 }
 
@@ -43,7 +43,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #484456;
+  color: var(--descrip-text);
   margin-bottom: 16px;
 }
 
@@ -70,7 +70,7 @@
 
 .mySkills {
   padding: 24px 24px 142px;
-  background-color: #fff;
+  background-color: var(--white-bg-color);
   border-radius: 12px;
 }
 
@@ -82,13 +82,13 @@
 .mySkills a {
   margin-top: 16px;
   padding: 8px 28.85px;
-  background-color: #EEECFE;
+  background-color: var(--skills-bg);
   border: 1px solid #C9C3D9;
   border-radius: 8px;
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.7px;
-  color: #484456;
+  color: var(--descrip-text);
   text-decoration: none;
 }
 
@@ -96,14 +96,14 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 25.2px;
-  color: #1A1A27;
+  color: var(--skills-title);
   margin-bottom: 8px;
 }
 
 /* COUNTER */
 .counter {
   padding: 24px 24px ;
-  background-color: #fff;
+  background-color: var(--white-bg-color);
   border-radius: 12px;
 }
 
@@ -111,7 +111,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 25.2px;
-  color: #1A1A27;
+  color: var(--counter-title);
   margin-bottom: 8px;
 }
 
@@ -123,7 +123,7 @@
   margin-top: 24px;
   padding-top: 24px;
   padding-bottom: 24px;
-  background-color: #EEECFE;
+  background-color: var(--skills-bg);
 }
 
 .counterResult {
@@ -131,7 +131,7 @@
   font-size: clamp(24px, 4vw, 32px);
   line-height: 38.4px;
   letter-spacing: -0.64px;
-  color: #1A1A27;
+  color: var(--counter-result);
 }
 
 .counterButtons {

@@ -2,10 +2,51 @@
 
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
-  background-color: #FCF8FF;
+  background-color: var(--main-bg);
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+}
+
+:root {
+  --main-bg: #FCF8FF;
+  --white-bg-color: #ffffff;
+  --main-text: #1a1a1a;
+  --footer-bg-color: #E9E6F8;
+  --footer-title-color: #1A1A27;
+  --footer-subtitle-color: #484456;
+  --footer-text-color: #5D6478;
+  --header-text: #4A00E0;
+  --title-text: #1A1A27;
+  --descrip-text: #484456;
+  --skills-title: #1A1A27;
+  --skills-text: #484456;
+  --skills-bg: #EEECFE;
+  --counter-title: #1A1A27;
+  --counter-result: #1A1A27;
+}
+
+.dark {
+  --main-bg: #1a1a1a;
+  --white-bg-color: #252525;
+  --main-text: #ffffff;
+  --footer-bg-color: #333333;
+  --footer-title-color: #f7eded;
+  --footer-subtitle-color: #f7eded;
+  --footer-text-color: #f7eded;
+  --header-text: #f7eded;
+  --title-text: #f7eded;
+  --descrip-text: #f7eded;
+  --skills-title: #f7eded;
+  --skills-text: #f7eded;
+  --skills-bg: #12085f;
+  --counter-title: #f7eded;
+  --counter-result: #f7eded;
+}
+
+body.dark {
+  background-color: #222;
+  color: #fff;
 }
 
 * {
@@ -22,6 +63,8 @@ a {
 }
 
 
+
+
 .container {
   max-width: 1300px;
   margin: 0 auto;
@@ -30,7 +73,7 @@ a {
 
 /* HEADER START */
 .header {
-  background-color: #fff;
+  background-color: var(--white-bg-color);
 }
 
 .headerWrapper {
@@ -45,7 +88,7 @@ a {
   font-weight: 700;
   font-size: clamp(18px, 4vw, 24px);
   line-height: 31.2px;
-  color: #4A00E0;
+  color: var(--header-text);
 }
 
 .hireMe {
@@ -69,7 +112,12 @@ a {
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
-  color: #4A00E0;
+  color: var(--header-text);
+}
+
+.teamToggle { 
+  background-color: transparent;
+  border: none;
 }
 
 .hamburger {
@@ -80,7 +128,7 @@ a {
 
 /* FOOTER START */
 .footer {
-  background-color: #E9E6F8;
+  background-color: var(--footer-bg-color);
 }
 
 .footerWrapper {
@@ -96,7 +144,7 @@ a {
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.7px;
-  color: #1A1A27;
+  color: var(--footer-title-color);
   margin-bottom: 16px;
 }
 
@@ -104,7 +152,7 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #484456;
+  color: var(--footer-subtitle-color);
   margin-bottom: 16px;
 }
 
@@ -118,13 +166,13 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #5D6478;
+  color: var(--footer)
 }
 /* FOOTER END */
 
 
 
-/* RESPONSIVE */
+/* RESPONSIVE @MEDIA*/
 @media (max-width: 768px) {
   .header {
     position: relative;
@@ -143,6 +191,11 @@ a {
     max-width: 100px;
     width: 100%;
     padding: 20px;
+    z-index: 10;
+  }
+
+  .navbar.active {
+    display: flex;
   }
 
   .hireMe {
