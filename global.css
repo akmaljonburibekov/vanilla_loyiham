@@ -62,9 +62,6 @@ a {
   text-decoration: none;
 }
 
-
-
-
 .container {
   max-width: 1300px;
   margin: 0 auto;
@@ -174,15 +171,19 @@ a {
 
 /* RESPONSIVE @MEDIA*/
 @media (max-width: 768px) {
+  .container {
+    width: min(100% - 32px, 1300px);
+    margin-inline: auto;
+  }
+
   .header {
     position: relative;
-    padding: 20px 30px;
   }
 
   .navbar {
     display: none;
     position: absolute;
-    right: 30px;
+    right: 16px;
     top: 50px;
     border: 1px solid #E3E0F2;
     flex-direction: column;
@@ -208,7 +209,8 @@ a {
   }
 
   .footer {
-    padding: 0 20px;
+    padding: 13px 42px;
+    background-color: var(--header-text);
   }
 
   .footerWrapper {

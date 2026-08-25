@@ -123,6 +123,7 @@
   margin-top: 24px;
   padding-top: 24px;
   padding-bottom: 24px;
+  border-radius: 8px;
   background-color: var(--skills-bg);
 }
 
@@ -156,14 +157,14 @@
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .container {
-    padding: 0;
+    padding: 0 12px;
   }
   .hero {
     padding: 36px 0;
     margin-top: 0;
     grid-template-columns: 1fr;
     gap: 20px;
-    border-radius: 0%;
+    border-radius: 12px;
   }
 
   .hero img {
@@ -186,7 +187,7 @@
 
   .mySkills {
     padding-bottom: 28px;
-    border-radius: 0%;
+    border-radius: 12px;
   }
 
   .mySkillsTitle {
@@ -201,7 +202,7 @@
   }
 
   .counter {
-    border-radius: 0%;
+    border-radius: 12px;
   }
 
   .counterTitle {
