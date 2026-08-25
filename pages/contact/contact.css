@@ -118,7 +118,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 15px 200px 15px 12px;
+  padding: 15px 12px;
 }
 /* CONTACT FORM END */
 
@@ -144,7 +144,7 @@
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .container {
-    padding: 0;
+    padding: 0 12px;
   }
 
   .contactInfo {
@@ -152,8 +152,8 @@
   }
 
   .contactFormWrapper {
-    padding: 28px 34px;
-    border-radius: 0%;
+    padding: 28px 16px;
+    border-radius: 12px;
   }
 
   .contactFormWrapper button {
@@ -166,6 +166,12 @@
     width: 100%;
   }
 
+  .contactForm input,
+  .contactForm textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
   .contactForm button {
     width: 100%;
   }
@@ -173,24 +179,28 @@
   .contactSocial {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    justify-items: center;
     gap: 28px;
     max-width: 360px;
     width: 100%;
     padding-top: 70px;
     padding-bottom: 40px;
     position: relative;
-    border-radius: 0%;
+    border-radius: 12px;
   }
 
   .contactSocial h3 {
     position: absolute;
     top: 22px;
-    left: 132px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
   }
 
   .contactSocial a {
     padding: 0;
-    margin-left: 32px;
+    margin-left: 0;
   }
 
   .contactMessageText {
@@ -198,6 +208,6 @@
   }
 
   .contactMessage {
-    border-radius: 0%;
+    border-radius: 12px;
   }
 }
