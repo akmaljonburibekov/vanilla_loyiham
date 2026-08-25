@@ -3,7 +3,6 @@ const teamToggle = document.querySelector(".teamToggle");
 
 const hamburger = document.querySelector(".hamburger");
 const navbar = document.querySelector(".navbar");
-const navbarToggle = document.querySelector(".navbarToggle");
 
 
 teamToggle.addEventListener('click', () => {

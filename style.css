@@ -146,6 +146,11 @@
   background-color: #4A00E0;
 }
 
+.counterButtons button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 
 
 /* RESPONSIVE */
