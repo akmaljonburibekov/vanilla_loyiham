@@ -93,6 +93,21 @@
   border-radius: 8px;
   color: #fff;
   background-color: #4A00E0;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s;
+}
+
+.contactForm button:hover {
+  background-color: #3700A8;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.contactForm button:active {
+  background-color: #2A0080;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transform: translateY(0);
 }
 
 .contactSocial {
@@ -119,6 +134,11 @@
   align-items: center;
   gap: 12px;
   padding: 15px 12px;
+  transition: all 0.3s;
+}
+
+.contactSocialItem:hover {
+  transform: scale(1.03);
 }
 /* CONTACT FORM END */
 
@@ -159,7 +179,7 @@
   .contactFormWrapper button {
     max-width: 370px;
     width: 100%;
-    justify-self: center;
+    align-self: center;
   }
 
   .contactForm {
@@ -170,10 +190,6 @@
   .contactForm textarea {
     width: 100%;
     box-sizing: border-box;
-  }
-
-  .contactForm button {
-    width: 100%;
   }
 
   .contactSocial {

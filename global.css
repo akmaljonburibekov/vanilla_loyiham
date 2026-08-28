@@ -14,6 +14,7 @@ body {
   --main-text: #1a1a1a;
   --footer-bg-color: #E9E6F8;
   --footer-title-color: #1A1A27;
+  --footer-title: #fff;
   --footer-subtitle-color: #484456;
   --footer-text-color: #5D6478;
   --header-text: #4A00E0;
@@ -45,13 +46,14 @@ body {
 }
 
 body.dark {
-  background-color: #222;
-  color: #fff;
+  background-color: var(--main-bg);
+  color: var(--main-text);
 }
 
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 ol, ul {
@@ -81,10 +83,22 @@ a {
   padding-bottom: 16px;
 }
 
-.header h1 a {
+.headerWrapper h1 a {
+  display: inline-block;
   font-weight: 700;
   font-size: clamp(18px, 4vw, 24px);
   line-height: 31.2px;
+  color: var(--header-text);
+  transition: all 0.3s;
+}
+
+.headerWrapper h1 a:hover {
+  transform: scale(1.01);
+  color: red;
+}
+
+.headerWrapper h1 a:active {
+  transform: scale(1.01);
   color: var(--header-text);
 }
 
@@ -97,6 +111,21 @@ a {
   font-weight: 600;
   font-size: 14px;
   line-height: 14px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s;
+}
+
+.hireMe:hover {
+  background-color: #3700A8;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.hireMe:active {
+  background-color: #2A0080;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transform: translateY(0);
 }
 
 .navbar {
@@ -110,15 +139,37 @@ a {
   font-size: 14px;
   line-height: 14px;
   color: var(--header-text);
+  transition: all 0.3s;
+}
+
+.navbar a:hover {
+  transform: scale(1.05);
+  color: red
+}
+
+.navbar a:active {
+  transform: scale(1.05);
+  color: var(--header-text);
 }
 
 .teamToggle { 
   background-color: transparent;
   border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.teamToggle:hover {
+  transform: scale(1.05);
+}
+
+.teamToggle:active {
+  transform: translateY(0);
 }
 
 .hamburger {
   display: none;
+  cursor: pointer;
 }
 /* HEADER END */
 
@@ -163,7 +214,7 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--footer)
+  color: var(--footer-text-color);
 }
 /* FOOTER END */
 
@@ -188,7 +239,7 @@ a {
     border: 1px solid #E3E0F2;
     flex-direction: column;
     gap: 25px;
-    background-color: #fff;
+    background-color: var(--white-bg-color);
     max-width: 100px;
     width: 100%;
     padding: 20px;
@@ -206,14 +257,30 @@ a {
   .hamburger {
     display: block;
     background-color: transparent;  
+    border: none;
   }
 
   .footer {
     padding: 13px 42px;
-    background-color: var(--header-text);
+    background-color: var(--footer-bg-color);
   }
 
   .footerWrapper {
     text-align: center;
+  }
+
+  .footerTitle {
+    display: none;
+  }
+
+  .footerSubTitle {
+    font-size: 14px;
+    color: var(--footer-title);
+    margin-bottom: 4px;
+  }
+
+  .footerLinks a {
+    font-size: 12px;
+    color: #CABEFF;
   }
 }
