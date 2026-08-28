@@ -176,14 +176,61 @@
     border-radius: 12px;
   }
 
-  .contactFormWrapper button {
-    max-width: 370px;
+  .contactForm input,
+  .contactForm textarea {
     width: 100%;
-    align-self: center;
+    box-sizing: border-box;
   }
 
-  .contactForm {
+  .contactSocial {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    justify-items: center;
+    gap: 28px;
+    max-width: 360px;
     width: 100%;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    position: relative;
+    border-radius: 12px;
+  }
+
+  .contactSocial h3 {
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+
+  .contactSocial a {
+    padding: 0;
+    margin-left: 0;
+  }
+
+  .contactMessageText {
+    padding: 0 16px;
+  }
+
+  .contactMessage {
+    border-radius: 12px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  .contactInfo {
+    grid-template-columns: 1fr;
+  }
+
+  .contactFormWrapper {
+    padding: 28px 16px;
+    border-radius: 12px;
   }
 
   .contactForm input,

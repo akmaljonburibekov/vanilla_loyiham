@@ -17,6 +17,7 @@ body {
   --footer-title: #fff;
   --footer-subtitle-color: #484456;
   --footer-text-color: #5D6478;
+  --footer-bg-resp: #4A00E0;
   --header-text: #4A00E0;
   --title-text: #1A1A27;
   --descrip-text: #484456;
@@ -227,6 +228,8 @@ a {
     margin-inline: auto;
   }
 
+
+  /* HEADER SECTION */
   .header {
     position: relative;
   }
@@ -260,9 +263,80 @@ a {
     border: none;
   }
 
+
+  /* FOOTER SECTION */
   .footer {
-    padding: 13px 42px;
-    background-color: var(--footer-bg-color);
+    padding: 16px 42px;
+    background-color: var(--footer-bg-resp);
+  }
+
+  .footerWrapper {
+    text-align: center;
+  }
+
+  .footerTitle {
+    display: none;
+  }
+
+  .footerSubTitle {
+    font-size: 14px;
+    color: var(--footer-title);
+    margin-bottom: 4px;
+  }
+
+  .footerLinks a {
+    font-size: 12px;
+    color: #CABEFF;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .container {
+    width: min(100% - 32px, 1300px);
+    margin-inline: auto;
+  }
+
+
+  /* HEADER SECTION */
+  .header {
+    position: relative;
+  }
+
+  .navbar {
+    display: none;
+    position: absolute;
+    right: 16px;
+    top: 50px;
+    border: 1px solid #E3E0F2;
+    flex-direction: column;
+    gap: 25px;
+    background-color: var(--white-bg-color);
+    max-width: 100px;
+    width: 100%;
+    padding: 20px;
+    z-index: 10;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .hireMe {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    background-color: transparent;  
+    border: none;
+  }
+
+
+  /* FOOTER SECTION */
+  .footer {
+    padding: 16px 42px;
+    background-color: var(--footer-bg-resp);
   }
 
   .footerWrapper {

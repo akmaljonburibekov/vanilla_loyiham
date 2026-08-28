@@ -187,9 +187,7 @@
 /* RESPONSIVE */
 @media (max-width: 992px) {
     .hero {
-      grid-template-columns: 1fr 1.5fr;
-      gap: 24px;
-      padding: 32px;
+      grid-template-columns: 1fr 3fr;
     }
 }
 
@@ -212,10 +210,7 @@
   .heroContent {
     padding: 0 30px;
     text-align: center;
-  }
-
-  .heroContentButton {
-    width: 100%;
+    justify-self: center;
   }
 
   .skills {
@@ -234,9 +229,70 @@
   }
 
   .mySkillsLink {
-    display: flex;
-    flex-direction: column;
+    justify-self: center;
     text-align: center;
+  }
+
+  .counter {
+    border-radius: 12px;
+  }
+
+  .counterTitle {
+    text-align: center;
+  }
+
+  .counterButtons button {
+    padding: 8px 14px;
+  }
+}
+
+
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 12px;
+  }
+  .hero {
+    padding: 36px 0;
+    margin-top: 8px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    border-radius: 12px;
+  }
+
+  .hero img {
+    justify-self: center;
+  }
+
+  .heroContent {
+    padding: 0 30px;
+    text-align: center;
+    justify-self: center;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .mySkills {
+    padding-bottom: 28px;
+    border-radius: 12px;
+  }
+
+  .mySkillsTitle {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .mySkillsLink {
+    justify-self: center;
+    text-align: center;
+  }
+
+  .mySkillsLink a {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .counter {
