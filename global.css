@@ -12,6 +12,10 @@ body {
   --main-bg: #FCF8FF;
   --white-bg-color: #ffffff;
   --main-text: #1a1a1a;
+  --hobbies-bg-color: #F5F2FF;
+  --heroAboutSubtitle-color: #575E72;
+  --mini-function-bg: #ddd;
+  --message-color: #6336FA;
   --footer-bg-color: #E9E6F8;
   --footer-title-color: #1A1A27;
   --footer-title: #fff;
@@ -31,7 +35,11 @@ body {
 .dark {
   --main-bg: #1a1a1a;
   --white-bg-color: #252525;
-  --main-text: #ffffff;
+  --main-text: #fff;
+  --hobbies-bg-color: #252525;
+  --heroAboutSubtitle-color: #f7eded;
+  --mini-function-bg: #252525;
+  --message-color: #f7eded;
   --footer-bg-color: #333333;
   --footer-title-color: #f7eded;
   --footer-subtitle-color: #f7eded;

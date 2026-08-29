@@ -12,6 +12,7 @@
   padding: 24px 24px 40px;
   background-color: #fff;
   border-radius: 12px;
+  background-color: var(--white-bg-color);
 }
 
 .contactTitle {
@@ -23,7 +24,7 @@
   font-size: clamp(22px, 4vw, 26px);
   line-height: 31.2px;
   letter-spacing: 0.52px;
-  color: #4A00E0;
+  color: var(--header-text);
 }
 
 .contactTitle::after {
@@ -34,7 +35,7 @@
   transform: translateX(-50%);
   width: 125px;
   height: 4px;
-  background-color: #4A00E0;
+  background-color: var(--header-text);
   border-radius: 9999px;
 }
 
@@ -48,7 +49,7 @@
   font-weight: 600;
   font-size: 18px;
   letter-spacing: 0.7px;
-  color: #484456;
+  color: var(--descrip-text);
   margin-bottom: 4px;
 }
 
@@ -117,7 +118,7 @@
   max-width: 282px;
   width: 100%;
   padding: 100px 25px;
-  background-color: #fff;
+  background-color: var(--white-bg-color);
   border-radius: 12px;
 }
 
@@ -125,7 +126,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 25.2px;
-  color: #1A1A27;
+  color: var(--title-text);
   margin-bottom: 16px;
 }
 
@@ -135,6 +136,7 @@
   gap: 12px;
   padding: 15px 12px;
   transition: all 0.3s;
+  color: var(--message-color);
 }
 
 .contactSocialItem:hover {
@@ -149,14 +151,14 @@
   margin-bottom: 48px;
   border: 1px solid #E9E6F8;
   border-radius: 12px;
-  background-color: #F5F2FF;
+  background-color: var(--hobbies-bg-color);
 }
 
 .contactMessageText {
   font-weight: 600;
   font-size: 18px;
   line-height: 28.8px;
-  color: #6336FA;
+  color: var(--message-color);
 }
 
 
